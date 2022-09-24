@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Kunsthal Aarhus</title>
+  </head>
+  <body>
+    <!-- Navigationsbar -->
+    <header>
+      <div><a href="index.html" class="logo">KUNSTHAL AARHUS</a></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn" />
+      <ul>
+        <li>
+          <label for="btn-1" class="show">Udstillinger</label>
+          <a href="#">Udstillinger</a>
+          <input type="checkbox" id="btn-1" />
+          <ul>
+            <li><a href="udstilling.html">Nuværende</a></li>
+            <li><a href="#">Kommende</a></li>
+            <li><a href="#">Tidligere</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-2" class="show">Besøg os</label>
+          <a href="#">Besøg os</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="#">Åbningstider</a></li>
+            <li><a href="#">Rundvisning</a></li>
+            <li><a href="#">Undervisning</a></li>
+            <li><a href="#">Spaceframe</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-3" class="show">Café</label>
+          <a href="#">Café</a>
+          <input type="checkbox" id="btn-3" />
+          <ul>
+            <li><a href="cafe.html">Menu</a></li>
+            <li><a href="#">Åbningstider</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-4" class="show">Butik</label>
+          <a href="#">Butik</a>
+          <input type="checkbox" id="btn-4" />
+          <ul>
+            <li><a href="#">Bogshop</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-5" class="show">Om kunsthallen</label>
+          <a href="#">Om kusthallen</a>
+          <input type="checkbox" id="btn-5" />
+          <ul>
+            <li><a href="historie.html">Historie</a></li>
+            <li><a href="kontakt.html">Kontakt os</a></li>
+            <li><a href="#">Projekter</a></li>
+            <li><a href="#">Job</a></li>
+            <li><a href="#">Presse</a></li>
+            <li><a href="#">Nyhedsbrev</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <script>
+      $(".icon").click(function () {
+        $("span").toggleClass("cancel");
+      });
+    </script>
+
+    <!-- Slideshow -->
+    <div class="CSSgal">
+      <!-- Don't wrap targets in parent -->
+      <s id="s1"></s>
+      <s id="s2"></s>
+      <s id="s3"></s>
+      <s id="s4"></s>
+
+      <div class="slider">
+        <div>
+          <img src="images/slide1.jpg" alt="slide1" />
+        </div>
+
+        <div>
+          <img src="images/slide2.jpg" alt="slide2" />
+        </div>
+
+        <div>
+          <img src="images/slide3.jpg" alt="slide3" />
+        </div>
+
+        <div>
+          <img src="images/slide4.jpg" alt="slide4" />
+        </div>
+      </div>
+
+      <div class="prevNext">
+        <div><a href="#s4"></a><a href="#s2"></a></div>
+        <div><a href="#s1"></a><a href="#s3"></a></div>
+        <div><a href="#s2"></a><a href="#s4"></a></div>
+        <div><a href="#s3"></a><a href="#s1"></a></div>
+      </div>
+
+      <div class="bullets">
+        <a href="#s1">1</a>
+        <a href="#s2">2</a>
+        <a href="#s3">3</a>
+        <a href="#s4">4</a>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="midsection">
+      <div class="flexbox_container">
+        <div class="flexbox_items">
+          <a href="cafe.html"
+            ><img
+              class="section_pictures"
+              src="images/cards-cafe.png"
+              alt="billede af cafe"
+          /></a>
+          <h3 class="text">Café</h3>
+          <p>Se vores menukort</p>
+        </div>
+
+        <div class="flexbox_items">
+          <a href="udstilling.html"
+            ><img
+              class="section_pictures"
+              src="images/cards-skulptur.png"
+              alt="billede af skulptur"
+          /></a>
+          <h3 class="text">The Balance Beam Gymnast</h3>
+          <p>Læs om udstillingen</p>
+        </div>
+
+        <div class="flexbox_items">
+          <a href="historie.html"
+            ><img
+              class="section_pictures"
+              src="images/cards-kunsthal.png"
+              alt="billede af kunsthal"
+          /></a>
+          <h3 class="text">Aarhus Kunsthal</h3>
+          <p>Læs om vores historie</p>
+        </div>
+
+        <div class="flexbox_items">
+          <a href="udstilling.html"
+            ><img
+              class="section_pictures"
+              src="images/cards-maskine.png"
+              alt="billede af maskine"
+          /></a>
+          <h3 class="text">Nyeste udstilling</h3>
+          <p>GO EXTREME</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="row">
+        <li>
+          <h2>Om os</h2>
+          <ul>
+            <li>Historie</li>
+            <li>Projekter</li>
+            <li>Karriere</li>
+            <li>Presse</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Kontakt</h2>
+          <address>
+            Lau Barnkob Lehrmann <br />
+            Kommunikations- og PR ansvarlig <br />
+            Telefon: <a href="tel:+41499074">+45 41 49 90 74</a><br />
+            <a href="mailto:communications@kunsthal.dk"> Send e-mail</a>
+          </address>
+        </li>
+
+        <li>
+          <h2>Sociale medier</h2>
+          <div>
+            <a href="https://twitter.com/kunsthalaarhus?lang=da"
+              ><img
+                src="images/twittericon.png"
+                alt="twittericon"
+                class="some_icon"
+            /></a>
+            <a href="https://www.facebook.com/kunsthalaarhus"
+              ><img
+                src="images/facebookicon.png"
+                alt="facebookicon"
+                class="some_icon"
+            /></a>
+            <a href="https://www.instagram.com/kunsthalaarhus/?hl=da"
+              ><img
+                src="images/instagramicon.png"
+                alt="instagramicon"
+                class="some_icon"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCh2CPSZktF7a7Im8fkSFArA"
+              ><img
+                src="images/youtubeicon.png"
+                alt="youtubeicon"
+                class="some_icon"
+            /></a>
+          </div>
+        </li>
+
+        <li>
+          <form>
+            <h2>Tilmeld dig vores nyhedsbrev</h2>
+
+            <div class="email-container">
+              <input type="text" placeholder="Navn" name="Navn" required />
+              <br />
+              <input
+                type="text"
+                placeholder="Email adresse"
+                name="mail"
+                required
+              />
+            </div>
+
+            <div>
+              <input type="submit" value="Tilmeld" />
+            </div>
+          </form>
+        </li>
+      </ul>
+
+      <p class="copyright">Copyright © All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

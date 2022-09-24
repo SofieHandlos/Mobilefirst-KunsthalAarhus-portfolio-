@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleudstilling.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Kunsthal Aarhus- Udstillinger</title>
+  </head>
+  <body>
+    <!-- Navigationsbar -->
+    <header>
+      <div><a href="index.html" class="logo">KUNSTHAL AARHUS</a></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn" />
+      <ul>
+        <li>
+          <label for="btn-1" class="show">Udstillinger</label>
+          <a href="#">Udstillinger</a>
+          <input type="checkbox" id="btn-1" />
+          <ul>
+            <li><a href="udstilling.html">Nuværende</a></li>
+            <li><a href="#">Kommende</a></li>
+            <li><a href="#">Tidligere</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-2" class="show">Besøg os</label>
+          <a href="#">Besøg os</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="#">Åbningstider</a></li>
+            <li><a href="#">Rundvisning</a></li>
+            <li><a href="#">Undervisning</a></li>
+            <li><a href="#">Spaceframe</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-3" class="show">Café</label>
+          <a href="#">Café</a>
+          <input type="checkbox" id="btn-3" />
+          <ul>
+            <li><a href="cafe.html">Menu</a></li>
+            <li><a href="#">Åbningstider</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-4" class="show">Butik</label>
+          <a href="#">Butik</a>
+          <input type="checkbox" id="btn-4" />
+          <ul>
+            <li><a href="#">Bogshop</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-5" class="show">Om kunsthallen</label>
+          <a href="#">Om kusthallen</a>
+          <input type="checkbox" id="btn-5" />
+          <ul>
+            <li><a href="historie.html">Historie</a></li>
+            <li><a href="kontakt.html">Kontakt os</a></li>
+            <li><a href="#">Projekter</a></li>
+            <li><a href="#">Job</a></li>
+            <li><a href="#">Presse</a></li>
+            <li><a href="#">Nyhedsbrev</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <script>
+      $(".icon").click(function () {
+        $("span").toggleClass("cancel");
+      });
+    </script>
+
+    <div class="site">
+      <section class="title_section">
+        <h1 class="title">GO EXTREME</h1>
+        <h3 class="sub_title">
+          Se udstillingen på Kunsthal Aarhus mellem d. 28.08.2021 og d.
+          30.01.2022
+        </h3>
+        <br />
+        <p class="article1">
+          Velkommen til GO EXTREME i Kunsthal Aarhus: I udstillingen kan du
+          opleve værker skabt af danske og udenlandske kunstnere. Værker, som
+          tematiserer forholdet mellem krop og sind og menneskets jagt på
+          ekstraordinære præstationer.
+          <br />
+          <br />
+          Bevæg dig ind i udstillingens tre dele: EKSTREMERNES ANATOMI, HINSIDES
+          KROPPEN og EKSTREM FITNESS. Mød eller tag selv aktiv del i kunstværker
+          i samspil med alt fra kampsport, ultraløb, bodybuilding og E-sport.
+        </p>
+        <br />
+      </section>
+
+      <main class="equal-height-container">
+        <div class="first">
+          <h2 class="pictureheader">Love your Enemies</h2>
+          <img
+            src="imagesudstilling/enemies.png"
+            class="picture"
+            alt="udstilling 1"
+          />
+          <br />
+          <p class="article">
+            Den argentinske filmskaber, Mauro Andrizzi, har skabt tre
+            videoværker, der på forskelligvis præsenterer det menneskelige
+            urscenarie: Kampen. I et grænseland mellem fantasi, mytologi og
+            realisme brager en række forskellige figthere sammen.
+            <br />
+            <br />
+            MMA-kæmperne optræder på lige linje med middelalderridere og
+            gadekæmpere. I Love your Enemies inviteres vi ind mit i kampens
+            intensitet, med alt hvad det indebærer af kropslighed, bevægelse,
+            dedikation og vildskab.
+          </p>
+        </div>
+
+        <div class="second">
+          <h2 class="pictureheader">The Balance Gymnast</h2>
+          <img
+            src="imagesudstilling/gymnast.png"
+            class="picture"
+            alt="udstilling 2"
+          />
+          <br />
+          <p class="article">
+            The Balance Beam Gymnast er en kvindelig gymnast, der poserer i det
+            tidligste stadie af en saltomortale. Her viser hun, hvordan
+            menneskekroppen præsterer i en ekstrem situation.
+            <br />
+            <br />
+            Kvinden er en del af konceptet BODY WORLDS, hvor biologiske
+            menneskekroppe præserveres ned i selv de mindste muskler, sener og
+            blodkar. Denne særlige teknik kaldes plastination og blev opfundet i
+            1977 af Dr. Gunther von Hagens.
+            <br />
+            <br />
+            Ved at fylde kroppens celler med et plastmateriale, bliver det
+            muligt at bevare og fremvise kroppens overvældende detaljer.
+          </p>
+        </div>
+
+        <div class="third">
+          <h2 class="pictureheader">ExoOdyssé</h2>
+          <img
+            src="imagesudstilling/exoodyssé.png"
+            class="picture"
+            alt="udstilling 3"
+          />
+          <br />
+          <p class="article">
+            I 2020 tog ekstremsportatleten, Terrence Steinberg, på en rotur over
+            Stillehavet. Det er dokumentationen af denne færd, der er grundlaget
+            for en sanselig og sakral totalinstallation af Andreas Johnsen og
+            Mik Stampe Fogh.
+            <br />
+            <br />
+            Installationen afsøger menneskets stræben efter det uopnåelige og
+            rejsen som en både fysisk og mental bevægelse over ukendt
+            territorium. ExoOdyssé udforsker selve stammen i ekstremsport- mødet
+            mellem mennesket og naturen.
+            <br />
+            <br />
+            Værket undersøger, hvordan dette forhold bevæger sig mellem modstand
+            og symbiose, og giver sit eget bud på ekstremsportens mystiske,
+            spirituelle og menneskelige dimensioner.
+          </p>
+        </div>
+      </main>
+
+      <div class="container2">
+        <h2 class="articleheader">Mere om GO EXTREME:</h2>
+        <br />
+        <p class="articletext">
+          Prøv kræfter med et ekstremt fitnesscenter, mens elektroniske toner
+          fra sample-troldmændene Den Sorte Skole pumper derudaf.
+          <br />
+          Lad dig opsluge af en videoinstallation, hvor Mixed Martial Arts møder
+          middelalderkrig, eller kast dig selv ind og kæmp i en MMA-arena. Mærk
+          den virtuelle verden i en totalscenografi af et Counter
+          Strike-univers.
+          <br />
+          <br />
+          Du kan klatre på et psykedelisk kunstværk eller skrab i
+          udstillingsrummet og fremkald en særlig duft. Spejl dig i
+          menneskekroppens mest usædvanlige og foruroligende hudløse sider. Mød
+          robotter bygget af træningsmaskiner og hils på kropsikonet over dem
+          alle, Arnold Schwarzenegger i en 1:1 dobbeltskulptur.
+          <br />
+          <br />
+        </p>
+
+        <h2 class="articleheader">Kunsntere og ekstremudøvere i Go Extreme:</h2>
+        <br />
+        <p class="articletext">
+          - Body Worlds, Sissel Tolaas, Lea Guldditte Hestelund, Trisha Cheeney,
+          Den Sorte Skole, Søren Thilo Funder, Mauro Andrizzi, Ditte Gantriis,
+          Laura Guiseppi, Jonas Pihl, Andreas Johnsen & Mik Stampe Fogh,
+          Plethora Magazine, Stine Rex, Esben Seir, Casper Steinfath, Kristina
+          Schou Madsen, Aarhus Fight Academy, Meat Lump, Julius César, Asger
+          Juhl, Mikkel Haahr, Ellen Brennan og Marie Højlund/KH Marie.
+          <br />
+          <br />
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="row">
+        <li>
+          <h2>Om os</h2>
+          <ul>
+            <li>Historie</li>
+            <li>Projekter</li>
+            <li>Karriere</li>
+            <li>Presse</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Kontakt</h2>
+          <address>
+            Lau Barnkob Lehrmann <br />
+            Kommunikations- og PR ansvarlig <br />
+            Telefon: <a href="tel:+41499074">+45 41 49 90 74</a><br />
+            <a href="mailto:communications@kunsthal.dk"> Send e-mail</a>
+          </address>
+        </li>
+
+        <li>
+          <h2>Sociale medier</h2>
+          <div>
+            <a href="https://twitter.com/kunsthalaarhus?lang=da"
+              ><img
+                src="images/twittericon.png"
+                alt="twittericon"
+                class="some_icon"
+            /></a>
+            <a href="https://www.facebook.com/kunsthalaarhus"
+              ><img
+                src="images/facebookicon.png"
+                alt="facebookicon"
+                class="some_icon"
+            /></a>
+            <a href="https://www.instagram.com/kunsthalaarhus/?hl=da"
+              ><img
+                src="images/instagramicon.png"
+                alt="instagramicon"
+                class="some_icon"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCh2CPSZktF7a7Im8fkSFArA"
+              ><img
+                src="images/youtubeicon.png"
+                alt="youtubeicon"
+                class="some_icon"
+            /></a>
+          </div>
+        </li>
+
+        <li>
+          <form>
+            <p class="nyhedsbrev">Tilmeld dig vores nyhedsbrev</p>
+
+            <div class="email-container">
+              <input type="text" placeholder="Navn" name="Navn" required />
+              <br />
+              <input
+                type="text"
+                placeholder="Email adresse"
+                name="mail"
+                required
+              />
+            </div>
+
+            <div>
+              <input type="submit" value="Tilmeld" />
+            </div>
+          </form>
+        </li>
+      </ul>
+
+      <p class="copyright">Copyright © All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

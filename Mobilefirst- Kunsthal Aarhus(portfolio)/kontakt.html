@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylekontakt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Kunsthal Aarhus- Kontakt os</title>
+  </head>
+  <body>
+
+<!-- Navigationsbar -->
+<header>
+  <div><a href="index.html" class="logo">KUNSTHAL AARHUS</a></div>
+  <label for="btn" class="icon">
+    <span class="fa fa-bars"></span>
+  </label>
+  <input type="checkbox" id="btn">
+  <ul>
+    <li>
+      <label for="btn-1" class="show">Udstillinger</label>
+        <a href="#">Udstillinger</a>
+        <input type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="udstilling.html">Nuværende</a></li>
+          <li><a href="#">Kommende</a></li>
+          <li><a href="#">Tidligere</a></li>
+        </ul>
+    </li>
+    
+    <li>
+      <label for="btn-2" class="show">Besøg os</label>
+        <a href="#">Besøg os</a>
+        <input type="checkbox" id="btn-2">
+        <ul>
+          <li><a href="#">Åbningstider</a></li>
+          <li><a href="#">Rundvisning</a></li>
+          <li><a href="#">Undervisning</a></li>
+          <li><a href="#">Spaceframe</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-3" class="show">Café</label>
+        <a href="#">Café</a>
+        <input type="checkbox" id="btn-3">
+        <ul>
+          <li><a href="cafe.html">Menu</a></li>
+          <li><a href="#">Åbningstider</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-4" class="show">Butik</label>
+        <a href="#">Butik</a>
+        <input type="checkbox" id="btn-4">
+        <ul>
+          <li><a href="#">Bogshop</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-5" class="show">Om kunsthallen</label>
+        <a href="#">Om kusthallen</a>
+        <input type="checkbox" id="btn-5">
+        <ul>
+          <li><a href="historie.html">Historie</a></li>
+          <li><a href="kontakt.html">Kontakt os</a></li>
+          <li><a href="#">Projekter</a></li>
+          <li><a href="#">Job</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Nyhedsbrev</a></li>
+        </ul>
+    </li>
+  </ul>
+</header>
+
+<script>
+  $('.icon').click(function(){
+    $('span').toggleClass("cancel");
+  });
+</script>
+
+<!-- Kontaktinformation om medarbejdere -->
+<div class="site">
+  <section class="title_section">
+    <h1 class="title">KONTAKT OS</h1>
+      <br>
+      <p class="sub_title"> 
+        Du er altid velkommen til at kontakte os hvis du har spørgsmål, 
+        ris eller ros til Kunsthal Aarhus. Vi vil hjælpe dig hurtigst muligt! 
+        <br>
+        For spørgsmål og booking af undervisning/fremvisninger, udfyld 
+        venligst kontaktformularen nederst på siden.
+      </p>
+      <br>
+  </section>
+
+  <main class="equal-height-container">
+    <div class="first">
+      <img src="imageskontakt/PeterOle.png" class="picture" alt="Peter Ole">
+        <h2 class="pictureheader">Peter Ole Pedersen</h2>
+        <h4 class="jobtitle">Projektleder</h4>
+          <a href="tel:+4574493682"> Telefon: +45 74 49 36 82</a>
+        <h4>Mail: pop@kunsthal.dk</h4>
+    </div>
+
+    <div class="second">
+      <img src="imageskontakt/Lau.png" class="picture" alt="Lau">
+        <h2 class="pictureheader">Lau Barnkob Lehrmann</h2>
+        <h4 class="jobtitle">Kommunikations- og PR ansvarlig</h4>
+          <a href="tel:+4541499074"> Telefon: +45 41 49 90 74</a>
+        <h4>Mail: communications@kunsthal.dk</h4>
+    </div>
+
+    <div class="third">
+      <img src="imageskontakt/Iben.png" class="picture" alt="Iben">
+        <h2 class="pictureheader">Iben Mosbæk</h2>
+        <h4 class="jobtitle">Direktør</h4>
+          <a href="tel:+4568934702"> Telefon: +45 68 93 47 02</a>
+        <h4>Mail: im@kunsthal.dk</h4>
+    </div>
+  </main>
+</div>
+
+<!-- Undervisningsforløb -->
+<div>
+  <h1 class="teachingcourses_title">Undervisningsforløb</h1>
+  <br>
+  <p class="sub_title"> 
+    Kunsthal Aarhus udbyder kunstfaglige og 
+    diskuterende undervisningsforløb i relation til de 
+    aktuelle udstillinger for både grundskoler og ungdomsuddannelser.
+  <br>
+    Kontakt Lau Lehrmann på communications@kunsthal.dk for at få mere at 
+    vide om vores undervisningsforløb, eller læs mere under "undervisning"
+  <br>
+  <br>
+    Du kan også tilmelde dig her og modtage information om skoleforløb i din indbakke:</p>
+  <br>    
+</div>
+
+<!-- Kontaktformular-->
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label class="kontaktlabel" for="fname">Fornavn</label>
+      </div>
+    <div class="col-75">
+      <input class="kontaktlabel" type="text" id="fname" name="Fornavn" placeholder="Fornavn..">
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label class="kontaktlabel" for="lname">Efternavn</label>
+      </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="Efternavn" placeholder="Efternavn..">
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label class="kontaktlabel" for="country">Land</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="danmark">Danmark</option>
+          <option value="norge">Norge</option>
+          <option value="sverige">Sverige</option>
+          <option value="finland">Finland</option>
+          <option value="tyskland">Tyskland</option>
+        </select>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label class="kontaktlabel" for="subject">Emne</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="submit" value="Send besked">
+      </div>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <ul class="row">
+    <li>
+      <h2>Om os</h2>
+        <ul >
+          <li>Historie</li>
+          <li>Projekter</li>
+          <li>Karriere</li>
+          <li>Presse</li>
+        </ul>
+    </li>
+    
+    <li>
+      <h2 >Kontakt</h2>
+        <address>
+          Lau Barnkob Lehrmann <br> Kommunikations- og PR ansvarlig <br>
+          Telefon: <a href="tel:+4541499074">+45 41 49 90 74</a><br>
+          <a href="mailto:communications@kunsthal.dk"> Send e-mail</a>
+        </address>
+    </li>
+    
+    <li>
+      <h2>Sociale medier</h2>
+        <div>
+          <a href="https://twitter.com/kunsthalaarhus?lang=da"><img src="images/twittericon.png" alt="twittericon" class="some_icon"></a>
+          <a href="https://www.facebook.com/kunsthalaarhus"><img src="images/facebookicon.png" alt="facebookicon" class="some_icon"></a>
+          <a href="https://www.instagram.com/kunsthalaarhus/?hl=da"><img src="images/instagramicon.png" alt="instagramicon" class="some_icon"></a>
+          <a href="https://www.youtube.com/channel/UCh2CPSZktF7a7Im8fkSFArA"><img src="images/youtubeicon.png" alt="youtubeicon" class="some_icon"></a>
+        </div>
+    </li>
+
+    <li>
+      <form>
+        <p class="nyhedsbrev">Tilmeld dig vores nyhedsbrev</p>
+        <div class="email-container">
+          <input type="text" placeholder="Navn" name="Navn" required>
+          <br/>
+          <input type="text" placeholder="Email adresse" name="mail" required>
+        </div>
+ 
+        <div>
+          <input type="submit" value="Tilmeld">
+        </div>
+      </form>
+    </li>
+  </ul>
+ 
+    <p class="copyright">Copyright © All Rights Reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecafe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Kunsthal Aarhus- Café</title>
+  </head>
+  <body>
+
+<!-- Navigationsbar -->
+<header>
+  <div><a href="index.html" class="logo">KUNSTHAL ARRHUS</a></div>
+  <label for="btn" class="icon">
+    <span class="fa fa-bars"></span>
+  </label>
+  <input type="checkbox" id="btn">
+  <ul>
+    <li>
+      <label for="btn-1" class="show">Udstillinger</label>
+      <a href="#">Udstillinger</a>
+      <input type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="udstilling.html">Nuværende</a></li>
+          <li><a href="#">Kommende</a></li>
+          <li><a href="#">Tidligere</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-2" class="show">Besøg os</label>
+      <a href="#">Besøg os</a>
+      <input type="checkbox" id="btn-2">
+        <ul>
+          <li><a href="#">Åbningstider</a></li>
+          <li><a href="#">Rundvisning</a></li>
+          <li><a href="#">Undervisning</a></li>
+          <li><a href="#">Spaceframe</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-3" class="show">Café</label>
+      <a href="#">Café</a>
+      <input type="checkbox" id="btn-3">
+        <ul>
+          <li><a href="cafe.html">Menu</a></li>
+          <li><a href="#">Åbningstider</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-4" class="show">Butik</label>
+      <a href="#">Butik</a>
+      <input type="checkbox" id="btn-4">
+        <ul>
+          <li><a href="#">Bogshop</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+    </li>
+
+    <li>
+      <label for="btn-5" class="show">Om kunsthallen</label>
+      <a href="#">Om kusthallen</a>
+      <input type="checkbox" id="btn-5">
+        <ul>
+          <li><a href="historie.html">Historie</a></li>
+          <li><a href="kontakt.html">Kontakt os</a></li>
+          <li><a href="#">Projekter</a></li>
+          <li><a href="#">Job</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Nyhedsbrev</a></li>
+        </ul>
+    </li>
+  </ul>
+</header>
+
+<script>
+  $('.icon').click(function(){
+    $('span').toggleClass("cancel");
+  });
+</script>
+
+<!-- Tekst om caféen-->
+<div class="bodystyle">
+<section class="about_section">
+  <h1 class="title">CAFÉ KUNSTHAL</h1>
+  <br>
+  <p class="aboutcafe">Café Kunsthal tilbyder dig den idelle kunstpause 
+    til dit besøg i Kunsthal Aarhus, der kan sørge for 
+    lækker vegetarisk forplejning, lidt til den søde 
+    tand og et veld af forskellige kvalitetsudvalgte drikkevarer.
+    Caféområdet er desuden oplagt til pauser, ligesom lokalet 
+    kan bruges til møder, mindre foredrag, præsentationer, workshops og brainstorming. 
+  </p>
+</section>
+
+<!-- Billeder fra caféen-->
+<div class="menu-fotos-container">
+  <div class="menu-fotos">
+    <img src="imagescafe/cafe1.png" alt="cafe 1">
+    <img src="imagescafe/cafe2.png" alt="cafe 2">
+    <img src="imagescafe/cafe3.png" alt="cafe 3">
+  </div>
+</div>
+
+<!-- MENU CONTENT -->
+<!-- Kager -->
+<div class="menu-container">
+  <div class="menu">
+    <h2 class="menu-group-heading">Til den søde tand</h2>
+      <div class="menu-group">
+      <div class="menu-item">
+        <img class="menu-item-image" src="imagescafe/kage1.jpg" alt="kage 1">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Croissant</span>
+            <span class="menu-item-price">20.-</span>
+          </h3>
+          <p class="menu-item-description">Hjemmebagt croissant- altid bagt om morgenen eller midt på dagen.</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img class="menu-item-image" src="imagescafe/kage2.jpg" alt="Kage 2">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Kanelsnegl</span>
+            <span class="menu-item-price">25.-</span>
+          </h3>
+          <p class="menu-item-description">Hjemmebagt kanelsnegl- altid bagt om morgenen eller midt på dagen.</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img class="menu-item-image" src="imagescafe/kage3.jpg" alt="Kage 3">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Blåbærmuffin</span>
+            <span class="menu-item-price">25.-</span>
+          </h3>
+          <p class="menu-item-description">Hjemmebagt muffin med blåbærfrostie og pynt- altid bagt om morgenen eller midt på dagen.</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img class="menu-item-image" src="imagescafe/kage4.jpg" alt="Kage 4">
+        <div class="menu-item-text">
+          <h3 class="menu-item-heading">
+            <span class="menu-item-name">Chokoladekage</span>
+            <span class="menu-item-price">20.-</span>
+          </h3>
+          <p class="menu-item-description">Hjemmebagt chokoladekage, kan variere med andre kager. Spørg gerne i caféen.</p>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- Drikkevarer-->
+  <h2 class="menu-group-heading">Drikkevarer</h2>
+  <div class="menu-group">
+    <div class="menu-item">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Filterkaffe</span>
+          <span class="menu-item-price">20.-</span>
+        </h3>
+        <p class="menu-item-description">Friskbrygget filterkaffe</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Cortado</span>
+          <span class="menu-item-price">25.-</span>
+        </h3>
+        <p class="menu-item-description">Double espressoshot med samme mængde mælk</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Caffe latte</span>
+          <span class="menu-item-price">32.-</span>
+        </h3>
+        <p class="menu-item-description">Double espresso med mælk</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Espresso</span>
+          <span class="menu-item-price">22.-</span>
+        </h3>
+        <p class="menu-item-description">Double espressoshot</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Flatwhite</span>
+          <span class="menu-item-price">30.-</span>
+        </h3>
+        <p class="menu-item-description">Double espressoshot med 2/3 mælk</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-text">
+        <h3 class="menu-item-heading">
+          <span class="menu-item-name">Americano</span>
+          <span class="menu-item-price">25.-</span>
+        </h3>
+        <p class="menu-item-description">Double espressohot og kogende vand</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <ul class="row">
+    <li>
+      <h2>Om os</h2>
+        <ul>
+          <li>Historie</li>
+          <li>Projekter</li>
+          <li>Karriere</li>
+          <li>Presse</li>
+        </ul>
+    </li>
+
+    <li>
+      <h2 >Kontakt</h2>
+        <address>
+          Lau Barnkob Lehrmann <br> Kommunikations- og PR ansvarlig <br>
+          Telefon: <a href="tel:+41499074">+45 41 49 90 74</a><br>
+          <a href="mailto:communications@kunsthal.dk"> Send e-mail</a>
+        </address>
+    </li>
+
+    <li>
+      <h2>Sociale medier</h2>
+        <div>
+          <a href="https://twitter.com/kunsthalaarhus?lang=da"><img src="images/twittericon.png" alt="twittericon" class="some_icon"></a>
+          <a href="https://www.facebook.com/kunsthalaarhus"><img src="images/facebookicon.png" alt="facebookicon" class="some_icon"></a>
+          <a href="https://www.instagram.com/kunsthalaarhus/?hl=da"><img src="images/instagramicon.png" alt="instagramicon" class="some_icon"></a>
+          <a href="https://www.youtube.com/channel/UCh2CPSZktF7a7Im8fkSFArA"><img src="images/youtubeicon.png" alt="youtubeicon" class="some_icon"></a>
+        </div>
+    </li>
+
+    <li>
+      <form>
+        <p class="nyhedsbrev">Tilmeld dig vores nyhedsbrev</p>
+        
+        <div class="email-container">
+          <input type="text" placeholder="Navn" name="Navn" required>
+          <br/>
+          <input type="text" placeholder="Email adresse" name="mail" required>
+        </div>
+
+        <div>
+          <input type="submit" value="Tilmeld">
+        </div>
+      </form>
+    </li>
+  </ul>
+  
+  <p class="copyright">Copyright © All Rights Reserved</p>
+</footer>
+</body>
+</html>
